@@ -60,7 +60,7 @@ const index = () => {
                                     
                                     <h2 class="text-sm tracking-widest title-font mb-3 font-medium">{edition.name}</h2>
                                     <h1 class="text-4xl text-gray-900 leading-none flex items-center pb-4 mb-4 border-b border-gray-200">
-                                        <span>{isMonthly ? edition.monthly : edition.yearly}</span>
+                                        <span>{isMonthly ? edition.monthly.toLocaleString() : edition.yearly.toLocaleString()}</span>
                                         <span class="text-lg ml-2 -mt-4 font-normal text-gray-500">円/{isMonthly ? "月": "年"}</span>
                                     </h1>
                                     <p class="flex items-center text-gray-600 mb-2">
