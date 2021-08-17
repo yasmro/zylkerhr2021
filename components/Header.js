@@ -11,14 +11,14 @@ const Header = () => {
 
     return (
         <header>
-            <nav className="w-full flex flex-wrap items-center justify-between px-2 py-6 bg-white">
+            <nav className="w-full flex flex-wrap items-center justify-between px-2 py-4 bg-white">
                 <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
                     <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
 
                         <Link href="/">
-                            <a className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-gray-500"
+                            <a className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase text-gray-500"
                             >
-                            ジルカーHR
+                                <Image src={"/images/zylker-hr.png"} width={120} height={40} />
                             </a>
                         </Link>
                         <button
