@@ -9,14 +9,14 @@ const index = (props) => {
 
     return (
         <div>
-            <SectionTitle title="ライブウェビナー" description="ジルカーHRを活用し、;あらゆる業務改善に努めるエキスパートたちがWebセミナーを提供します" />
+            <SectionTitle title="ライブウェビナー" enTitle="webinars" description="ジルカーHRを活用し、;あらゆる業務改善に努めるエキスパートたちがWebセミナーを提供します" />
 
             <div className="mx-auto py-12 px-4 sm:px-6 lg:px-24">
                 
                 <div class="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     {
-                        [1, 2,  ].map((el) => (
-                            <WebinarCard el={`b2b-${el}`} business="BtoB" />
+                        ["management-solution-20211023", "efficient-something-20211029",  ].map((el) => (
+                            <WebinarCard el={`${el}`} />
                         ))
                     }
 

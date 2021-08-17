@@ -4,7 +4,7 @@ import CaseTitle from '../../components/CaseTitle'
 const caseDetail = (props) => {
     return (
         <div>
-            <CaseTitle business={props.business}/>
+            <CaseTitle />
         </div>
     )
 }
@@ -23,15 +23,13 @@ export async function getStaticPaths({ locales }) {
 }
 
 export async function getStaticProps ({ params })  {
-    const slug = params.slug || ""
+    const slug = {params}
     const caseData = "";
-    const business = slug.split('-')[0] === "b2b" ? "BtoB" : "BtoC"
-    console.log(slug)
+
     return { 
         props: {
             slug,
             caseData,
-            business
         },
     };
 };

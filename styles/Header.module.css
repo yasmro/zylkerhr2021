@@ -27,7 +27,7 @@
     left: 0;
     width: 100%;
     height: 3px;
-    background-color: #000;
+    background-color: #1f1f1f;
     border-radius: 3px;
 }
 .menuTrigger span:nth-of-type(1) {
@@ -55,7 +55,7 @@ bottom: -30px;
 content: 'MENU';
 display: inline-block;
 width: 100%;
-color: #000;
+color: #1f1f1f;
 font-size: 16px;
 text-decoration: none;
 text-align: center;
@@ -64,21 +64,21 @@ transition: all .4s;
 }
 
 .menuTrigger.active span  {
-background-color: #fff;
+background-color: #1f1f1f;
 }
 
 .menuTrigger.active:after{
-color: #fff;
+color: #1f1f1f;
 }
 
 .menuTrigger.active span:nth-of-type(1) {
-transform: translateY(11px) rotate(-45deg);
+transform: translateY(11px) rotate(-20deg);
 }
 .menuTrigger.active span:nth-of-type(2) {
 opacity: 0;
 }
 .menuTrigger.active span:nth-of-type(3) {
-transform: translateY(-11px) rotate(45deg);
+transform: translateY(-11px) rotate(20deg);
 }
 
 .menuTrigger.active::after {
@@ -102,8 +102,8 @@ transform: translateY(-11px) rotate(45deg);
     place-items: center;
     text-align: center;
 
-    background-color: rgb(0,0,0,0.85);
-    color: #fff;
+    background-color: rgb(240, 240, 240,0.99);
+    color: #1f1f1f;
 
     transition: all 0.4s;
 }
@@ -133,7 +133,6 @@ transform: translateY(-11px) rotate(45deg);
 
 .menu .menuList a{
     position: relative;
-    color: #fff;
     overflow: hidden;
     margin-bottom: 15px;
 }

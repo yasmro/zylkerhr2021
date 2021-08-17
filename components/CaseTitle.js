@@ -1,9 +1,9 @@
 import React from 'react'
 
-const CaseTitle = ({title="人事労務作業のムダを解消！データの一元化で効率化を実現", companyName="ジルカーテクノロジー", contactName="松本氏"}) => {
+const CaseTitle = ({title="人事労務作業のムダを解消！データの一元化で効率化を実現", companyName="ジルカーテクノロジー", contactName="松本氏", category="建設", business="BtoB"}) => {
     return (
         <>
-            <div className="bg-gradient-to-r from-green-600 to-green-800  mx-auto py-16 px-6 lg:py-16 lg:px-36" >
+            <div className="bg-gradient-to-r from-primary-600 to-primary-800  mx-auto py-16 px-6 lg:py-16 lg:px-36" >
                 <h2 className="text-2xl font-extrabold tracking-tight text-white lg:text-4xl">
                     <span className="block">{title}</span>
                 </h2>
@@ -11,8 +11,8 @@ const CaseTitle = ({title="人事労務作業のムダを解消！データの�
                     {companyName}
                     {contactName}
                 </p>
-                <span class="inline-block border-2 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">建設</span>
-                <span class="inline-block border-2 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">BtoB</span>
+                <span class="inline-block border-2 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{category}</span>
+                <span class="inline-block border-2 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{business}</span>
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 py-12 px-4 lg:px-36 ">
                 

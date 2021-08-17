@@ -37,7 +37,7 @@ const index = (props) => {
 
     return (
         <div>
-            <SectionTitle title="導入事例" description="" />
+            <SectionTitle title="導入事例" enTitle="use cases" description="ジルカーHRを導入されたお客様の成功事例をご紹介します" />
 
             <div className="mx-auto py-12 px-4 sm:px-6 lg:px-24">
                 <div className="mx-0 lg:mx-24 p-6 rounded overflow-hidden shadow-lg">

@@ -4,7 +4,7 @@ import Link from 'next/link'
 const CaseCard = ({el="0", title="人事労務作業のムダを解消！データの一元化で効率化を実現", company="ジルカーテクノロジー株式会社", name="松本氏", business="BtoB", industries=["建設"]}) => {
     return (
         <Link href={`/cases/${el}`}>
-            <div class="cursor-pointer rounded overflow-hidden shadow-lg border-2 hover:border-green-500">
+            <div class="cursor-pointer rounded overflow-hidden shadow-lg border-2 hover:border-primary-500">
                 <img class="w-full" src="https://placehold.jp/600x400.png" alt="Mountain" />
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{title}</div>

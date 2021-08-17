@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css"
 
 import React from 'react'
 import Head from "next/head";
+import Script from 'next/script'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -49,7 +50,10 @@ function MyApp({ Component, pageProps }) {
         <Header />
 
         <Component {...pageProps} />
-        
+        <Script
+          dangerouslySetInnerHTML={{
+            __html: `var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode: "0442bfbcdf416b7012fa31e9d1b16ea48f1d24f7f69625ebff1c70712c95a79b", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);`
+          }} />
         <Footer />
     </React.Fragment>
   )
