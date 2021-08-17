@@ -19,7 +19,7 @@ const Header = () => {
                         <Link href="/">
                             <a className="text-sm font-bold leading-relaxed inline-block mr-4 whitespace-nowrap uppercase text-gray-500"
                             >
-                                <Image src={"/images/zylker-hr.png"} width={120} height={40} />
+                                <Image alt="ジルカーHR" src={"/images/zylker-hr.png"} width={120} height={40} />
                             </a>
                         </Link>
                     </div>

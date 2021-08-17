@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import CommonMeta from '../../components/CommonMeta'
 import SectionTitle from '../../components/SectionTitle'
 
 const index = () => {
@@ -37,6 +38,7 @@ const index = () => {
     
     return (
         <div>
+            <CommonMeta title="料金プラン" enTitle="pricing" description="ジルカーHRは初期費用・オプション料金なし！1ユーザから利用可能です" />
             <SectionTitle title="料金プラン" enTitle="pricing" description="ジルカーHRは初期費用・オプション料金なし！;1ユーザから利用可能です" />
 
             <div className="mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-24">

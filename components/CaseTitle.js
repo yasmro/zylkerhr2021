@@ -45,8 +45,8 @@ const CaseTitle = ({title="人事労務作業のムダを解消！データの�
                 </table>
                 <img class="w-full" src="https://placehold.jp/600x400.png" alt="Mountain" />
             </div>
-            <div className="px-4 lg:px-36 ">
-                <p class="text-gray-900 sm:mt-5 md:mt-5 lg:mx-0">
+            <div className="px-4 lg:px-36  ">
+                <p class="text-gray-900 sm:mt-5 md:mt-5 lg:mx-0 mb-5 bg-primary-50 p-6">
                     テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                     テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
                     テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト

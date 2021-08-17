@@ -1,9 +1,11 @@
 import React from 'react'
+import CommonMeta from '../../components/CommonMeta'
 import WebinarTitle from '../../components/WebinarTitle'
 
 const caseDetail = (props) => {
     return (
         <div>
+            <CommonMeta title={props.slug} description="" />
             <WebinarTitle />
             <div className="mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-24">
                 <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 lg:text-4xl mb-4 lg:mb-8">
@@ -30,7 +32,7 @@ export async function getStaticPaths({ locales }) {
 }
 
 export async function getStaticProps ({ params })  {
-    const slug = {params}
+    const slug = params.slug
     const webinarData = "";
 
     return { 

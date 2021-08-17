@@ -1,9 +1,12 @@
 import React from 'react'
 import CaseTitle from '../../components/CaseTitle'
+import CommonMeta from '../../components/CommonMeta'
 
 const caseDetail = (props) => {
     return (
+
         <div>
+            <CommonMeta title={props.slug} />
             <CaseTitle business={props.business}/>
         </div>
     )

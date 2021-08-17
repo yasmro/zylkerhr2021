@@ -3,12 +3,14 @@ import SectionTitle from '../../components/SectionTitle'
 import { useRouter } from "next/router";
 import Link from 'next/link'
 import WebinarCard from '../../components/WebinarCard';
+import CommonMeta from '../../components/CommonMeta';
 
 const index = (props) => {
     const router = useRouter();
 
     return (
         <div>
+            <CommonMeta  title="ライブウェビナー"  description="ジルカーHRを活用し、あらゆる業務改善に努めるエキスパートたちがWebセミナーを提供します" />
             <SectionTitle title="ライブウェビナー" enTitle="webinars" description="ジルカーHRを活用し、;あらゆる業務改善に努めるエキスパートたちがWebセミナーを提供します" />
 
             <div className="mx-auto py-12 px-4 sm:px-6 lg:px-24">

@@ -3,6 +3,7 @@ import SectionTitle from '../../components/SectionTitle'
 import { useRouter } from "next/router";
 import Link from 'next/link'
 import CaseCard from '../../components/CaseCard';
+import CommonMeta from '../../components/CommonMeta';
 
 const index = (props) => {
     const router = useRouter();
@@ -37,6 +38,7 @@ const index = (props) => {
 
     return (
         <div>
+            <CommonMeta title="導入事例" description="ジルカーHRを導入されたお客様の成功事例をご紹介します" />
             <SectionTitle title="導入事例" enTitle="use cases" description="ジルカーHRを導入されたお客様の成功事例をご紹介します" />
 
             <div className="mx-auto py-12 px-4 sm:px-6 lg:px-24">
