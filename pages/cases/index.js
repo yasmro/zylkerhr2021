@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SectionTitle from '../../components/SectionTitle'
 import { useRouter } from "next/router";
 import Link from 'next/link'
+import CaseCard from '../../components/CaseCard';
 
 const index = (props) => {
     const router = useRouter();
@@ -81,22 +82,13 @@ const index = (props) => {
 
                 <div class="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     {
-                        [1, 2, 3, 4, 5, 6].map((el) => (
-                            <Link href="/cases/title">
-                                <div class="rounded overflow-hidden shadow-lg">
-                                    <img class="w-full" src="https://placehold.jp/600x400.png" alt="Mountain" />
-                                    <div class="px-6 py-4">
-                                        <div class="font-bold text-xl mb-2">人事労務作業のムダを解消！データの一元化で効率化を実現</div>
-                                        <p class="text-gray-700 text-base">ジルカーテクノロジー株式会社</p>
-                                        <p class="text-gray-700 text-base">松本氏</p>
-                                    </div>
-                                    <div class="px-6 pt-4 pb-2">
-                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">B2B</span>
-                                        <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">建設</span>
-                                    </div>
-                                </div>
-                            </Link>
-
+                        [1, 2, 3, ].map((el) => (
+                            <CaseCard el={`b2b-${el}`} business="BtoB" />
+                        ))
+                    }
+                    {
+                        [1, 2, 3 ].map((el) => (
+                            <CaseCard el={`b2c-${el}`} business="BtoC" />
                         ))
                     }
 

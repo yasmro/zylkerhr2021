@@ -4,7 +4,7 @@ import SectionTitle from '../../components/SectionTitle'
 const index = () => {
     return (
         <div>
-            <SectionTitle title="お問い合わせ" description="ご質問、ご相談は以下のフォームよりお送りください。内容確認後、担当より通常2〜4営業日以内にご連絡いたします。" />
+            <SectionTitle title="お問い合わせ" description="ご質問、ご相談は以下のフォームよりお送りください。;内容確認後、担当より2〜4営業日以内にご連絡いたします。" />
             <div className="flex justify-content-center py-12 px-4 sm:px-6 lg:py-24 lg:px-24">
                 <form class="w-full max-w-lg">
                     <div class="flex flex-wrap -mx-3 mb-6">

@@ -10,8 +10,7 @@ const caseDetail = (props) => {
 }
 export async function getStaticPaths({ locales }) {
     const paths = [
-        "b2b-1","b2b-2","b2b-3",
-        "b2c-1","b2c-2","b2c-3",
+        "management-solution", "efficient-something"
     ].map(r => ({
         params: {
             slug: r
@@ -24,12 +23,12 @@ export async function getStaticPaths({ locales }) {
 
 export async function getStaticProps ({ params })  {
     const slug = {params}
-    const caseData = "";
+    const webinarData = "";
 
     return { 
         props: {
             slug,
-            caseData,
+            webinarData,
         },
     };
 };

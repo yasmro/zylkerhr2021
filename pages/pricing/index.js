@@ -37,7 +37,7 @@ const index = () => {
     
     return (
         <div>
-            <SectionTitle title="料金プラン" description="ジルカーHRは初期費用・オプション料金なし！1ユーザから利用可能です" />
+            <SectionTitle title="料金プラン" description="ジルカーHRは初期費用・オプション料金なし！;1ユーザから利用可能です" />
 
             <div className="mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-24">
                 <section class="text-gray-600 body-font overflow-hidden">

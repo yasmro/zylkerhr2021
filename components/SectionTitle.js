@@ -7,7 +7,9 @@ const SectionTitle = ({title="タイトル", description="セクションの概�
                 <span className="block">{title}</span>
             </h2>
             <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl md:mt-5 md:text-xl lg:mx-0">
-                {description}
+                {description.split(";").map((sentence) => (
+                    <span className="inline-block">{sentence}</span>
+                ))}
             </p>
         </div>
     )

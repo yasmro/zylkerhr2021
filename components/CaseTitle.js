@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CaseTitle = ({title="人事労務作業のムダを解消！データの一元化で効率化を実現", companyName="ジルカーテクノロジー", contactName="松本氏" }) => {
+const CaseTitle = ({title="人事労務作業のムダを解消！データの一元化で効率化を実現", companyName="ジルカーテクノロジー", contactName="松本氏"}) => {
     return (
         <>
             <div className="bg-gradient-to-r from-green-600 to-green-800  mx-auto py-16 px-6 lg:py-16 lg:px-36" >
@@ -21,25 +21,25 @@ const CaseTitle = ({title="人事労務作業のムダを解消！データの�
                         <span className="block">ジルカーテクノロジー</span>
                     </h3>
                     <tbody>
-                        <tr>
-                            <td class="border px-4 py-2">事業内容</td>
-                            <td class="border px-4 py-2">XXXXXX</td>
+                        <tr class="border-t border-b">
+                            <td class="px-4 py-2">事業内容</td>
+                            <td class="px-4 py-2">XXXXXX</td>
                         </tr>
-                        <tr>
-                            <td class="border px-4 py-2">設立</td>
-                            <td class="border px-4 py-2">1982年9月</td>
+                        <tr class="border-t border-b">
+                            <td class="px-4 py-2">設立</td>
+                            <td class="px-4 py-2">1982年9月</td>
                         </tr>
-                        <tr>
-                            <td class="border px-4 py-2">ビジネス</td>
-                            <td class="border px-4 py-2">BtoB, BtoC</td>
+                        <tr class="border-t border-b">
+                            <td class="px-4 py-2">ビジネス</td>
+                            <td class="px-4 py-2">BtoB, BtoC</td>
                         </tr>
-                        <tr>
-                            <td class="border px-4 py-2">従業員数</td>
-                            <td class="border px-4 py-2">500</td>
+                        <tr class="border-t border-b">
+                            <td class="px-4 py-2">従業員数</td>
+                            <td class="px-4 py-2">500</td>
                         </tr>
-                        <tr>
-                            <td class="border px-4 py-2">従業員数</td>
-                            <td class="border px-4 py-2">500</td>
+                        <tr class="border-t border-b">
+                            <td class="px-4 py-2">従業員数</td>
+                            <td class="px-4 py-2">500</td>
                         </tr>
                     </tbody>
                 </table>
