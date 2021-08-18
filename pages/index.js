@@ -20,7 +20,7 @@ export default function Home() {
           </div>
           <div className="mt-8 flex items-center justify-center lg:justify-start lg:flex-shrink-0">
             <div className="inline-flex rounded-md shadow">
-              <a
+              <a href="#" 
                 href="#"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-bold rounded-md text-white bg-primary-600 hover:bg-primary-700"
               >
@@ -28,7 +28,7 @@ export default function Home() {
               </a>
             </div>
             <div className="ml-3 inline-flex rounded-md shadow">
-              <a
+              <a href="#" 
                 href="#"
                 className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-bold rounded-md text-primary-600 bg-white hover:bg-primary-50"
               >
@@ -52,7 +52,7 @@ export default function Home() {
                 <div class="flex-grow pl-6">
                   <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Shooting Stars</h2>
                   <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-                  <a class="mt-3 text-primary-500 inline-flex items-center">Learn More
+                  <a href="#"  class="mt-3 text-primary-500 inline-flex items-center">Learn More
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
@@ -70,7 +70,7 @@ export default function Home() {
                 <div class="flex-grow pl-6">
                   <h2 class="text-gray-900 text-lg title-font font-medium mb-2">The Catalyzer</h2>
                   <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-                  <a class="mt-3 text-primary-500 inline-flex items-center">Learn More
+                  <a href="#"  class="mt-3 text-primary-500 inline-flex items-center">Learn More
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>
@@ -87,7 +87,7 @@ export default function Home() {
                 <div class="flex-grow pl-6">
                   <h2 class="text-gray-900 text-lg title-font font-medium mb-2">Neptune</h2>
                   <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug VHS try-hard ugh iceland kickstarter tumblr live-edge tilde.</p>
-                  <a class="mt-3 text-primary-500 inline-flex items-center">Learn More
+                  <a href="#"  class="mt-3 text-primary-500 inline-flex items-center">Learn More
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                       <path d="M5 12h14M12 5l7 7-7 7"></path>
                     </svg>

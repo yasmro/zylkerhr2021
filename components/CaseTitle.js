@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CaseTitle = ({title="人事労務作業のムダを解消！データの一元化で効率化を実現", companyName="ジルカーテクノロジー", contactName="松本氏", category="建設", business="BtoB"}) => {
+const CaseTitle = ({title="人事労務作業のムダを解消！データの一元化で効率化を実現", companyName="ジルカーテクノロジー", contactName="松本氏", industries=["建設"], business="BtoB"}) => {
     return (
         <>
             <div className="bg-gradient-to-r from-primary-600 to-primary-800  mx-auto py-16 px-6 lg:py-16 lg:px-36" >
@@ -11,14 +11,19 @@ const CaseTitle = ({title="人事労務作業のムダを解消！データの�
                     {companyName}
                     {contactName}
                 </p>
-                <span class="inline-block border-2 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{category}</span>
-                <span class="inline-block border-2 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{business}</span>
+                <span class="inline-block border-2 border-secondary-400 bg-secondary-400 rounded-full px-3 py-1 text-sm font-semibold text-black mr-2 mb-2">{business}</span>
+                {
+                    industries.map(industry => (
+                        <span class="inline-block border-2 rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2">{industry}</span>
+                    ))
+                }
+                
             </div>
             <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 py-12 px-4 lg:px-36 ">
                 
-                <table class="table-auto">
+                <table className="table-fixed">
                     <h3 className="text-xl font-extrabold tracking-tight mb-4">
-                        <span className="block">ジルカーテクノロジー</span>
+                        <span className="block">{companyName}</span>
                     </h3>
                     <tbody>
                         <tr class="border-t border-b">
@@ -31,7 +36,7 @@ const CaseTitle = ({title="人事労務作業のムダを解消！データの�
                         </tr>
                         <tr class="border-t border-b">
                             <td class="px-4 py-2">ビジネス</td>
-                            <td class="px-4 py-2">BtoB, BtoC</td>
+                            <td class="px-4 py-2">{business}</td>
                         </tr>
                         <tr class="border-t border-b">
                             <td class="px-4 py-2">従業員数</td>

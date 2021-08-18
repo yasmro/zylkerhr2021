@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-const WebinarCard = ({el="0", title="たった3ステップ！ジルカーHRのカンタン初期設定", company="ジルカーHR株式会社", role="マーケティング事業部", name="山本 隼", category="課題解決", startdt='2021-10-22T12:30:00+09:00', enddt='2021-10-22T14:00:00+09:00'}) => {
+const WebinarCard = ({el="0", title="たった3ステップ！ジルカーHRのカンタン初期設定", company="ジルカーHR株式会社", role="マーケティング事業部", name="山本 隼", category="課題解決", startdt='2021-10-22T12:30:00+09:00', enddt='2021-10-22T14:00:00+09:00', description=""}) => {
     const week = ["日", "月", "火", "水", "木", "金", "土"]
     
     const startDateTime = new Date(startdt)
@@ -30,7 +30,7 @@ const WebinarCard = ({el="0", title="たった3ステップ！ジルカーHRの�
                     <p class="text-gray-700 text-base">{role}</p>
                 </div>
                 <div class="px-6 pt-4 pb-2">
-                    <p class="text-gray-700 text-base text-sm">このウェビナーではジルカーHRを利用いただくにあたって必要な前提知識と初期セットアップの手順について解説します。</p>
+                    <p class="text-gray-700 text-sm">{description}</p>
                 </div>
             </div>
         </Link>

@@ -1,23 +1,21 @@
 import React from 'react'
 import CaseTitle from '../../components/CaseTitle'
 import CommonMeta from '../../components/CommonMeta'
+import { sampleCases } from '../../data/contents'
 
-const caseDetail = (props) => {
+const caseDetail = ({c}) => {
     return (
 
         <div>
-            <CommonMeta title={props.slug} />
-            <CaseTitle business={props.business}/>
+            <CommonMeta title={`${c.title} | ${c.company} | 事例紹介`} />
+            <CaseTitle title={c.title} companyName={c.company} contactName={c.contact} industries={c.industries} business={c.business}/>
         </div>
     )
 }
 export async function getStaticPaths({ locales }) {
-    const paths = [
-        "b2b-1","b2b-2","b2b-3",
-        "b2c-1","b2c-2","b2c-3",
-    ].map(r => ({
+    const paths = sampleCases.map(r => ({
         params: {
-            slug: r
+            slug: r.slug
         }
     }))
 
@@ -27,13 +25,13 @@ export async function getStaticPaths({ locales }) {
 
 export async function getStaticProps ({ params })  {
     const slug = params.slug || ""
-    const caseData = "";
+    const c = sampleCases.filter(caseData => caseData.slug === slug)[0];
     const business = slug.split('-')[0] === "b2b" ? "BtoB" : "BtoC"
-    console.log(slug)
+    console.log(c)
     return { 
         props: {
             slug,
-            caseData,
+            c,
             business
         },
     };

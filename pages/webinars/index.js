@@ -5,6 +5,8 @@ import Link from 'next/link'
 import WebinarCard from '../../components/WebinarCard';
 import CommonMeta from '../../components/CommonMeta';
 
+import { sampleWebinars } from '../../data/contents';
+
 const index = (props) => {
     const router = useRouter();
 
@@ -17,8 +19,18 @@ const index = (props) => {
                 
                 <div class="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     {
-                        ["management-solution-20211023", "efficient-something-20211029",  ].map((el) => (
-                            <WebinarCard el={`${el}`} />
+                        sampleWebinars.map((webinar) => (
+                            <WebinarCard 
+                                el={webinar.slug}
+                                title={webinar.title}
+                                company={webinar.company}
+                                role={webinar.role}
+                                name={webinar.name}
+                                category={webinar.category}
+                                startdt={webinar.startdt}
+                                enddt={webinar.enddt}
+                                description={webinar.description}
+                                />
                         ))
                     }
 

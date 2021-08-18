@@ -5,6 +5,8 @@ import Link from 'next/link'
 import CaseCard from '../../components/CaseCard';
 import CommonMeta from '../../components/CommonMeta';
 
+import { sampleCases } from '../../data/contents';
+
 const index = (props) => {
     const router = useRouter();
     const categories = [ "BtoB", "BtoC"];
@@ -84,13 +86,8 @@ const index = (props) => {
 
                 <div class="py-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
                     {
-                        [1, 2, 3, ].map((el) => (
-                            <CaseCard el={`b2b-${el}`} business="BtoB" />
-                        ))
-                    }
-                    {
-                        [1, 2, 3 ].map((el) => (
-                            <CaseCard el={`b2c-${el}`} business="BtoC" />
+                        sampleCases.map((c) => (
+                            <CaseCard el={c.slug} title={c.title} company={c.company} name={c.contact} business={c.business} industries={c.industries} />              
                         ))
                     }
 
