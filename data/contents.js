@@ -84,8 +84,8 @@ export const sampleFeatures = [
     },
     {
         id: 6,
-        slug: "simple-hiring-process",
-        title: "採用・人事プロセスをカンタンに",
+        slug: "customization",
+        title: "容易なカスタマイズ",
         description: "確認したい情報を収集するためのカスタムフォームを作成し、すべてのデータを最新状態に保ちます。",
         contents: ""
     },

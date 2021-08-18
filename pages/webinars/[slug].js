@@ -7,7 +7,7 @@ import { sampleWebinars } from '../../data/contents'
 const caseDetail = ({slug, webinar}) => {
     return (
         <div>
-            <CommonMeta title={slug} description="" />
+            <CommonMeta title={`${webinar.title} | ライブウェビナー`} description="" />
             <WebinarTitle title={webinar.title}
                 company={webinar.company}
                 role={webinar.role}

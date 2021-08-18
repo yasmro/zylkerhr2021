@@ -2,9 +2,12 @@ import React from 'react'
 import FeatureTitle from '../../components/FeatureTitle'
 import { sampleFeatures } from '../../data/contents'
 
+import CommonMeta from '../../components/CommonMeta'
+
 const featureDetail = ({ feature }) => {
     return (
         <div>
+            <CommonMeta title={`${feature.title} | ジルカーHRの機能`} description="" />
             <FeatureTitle title={feature.title} enTitle={`Feature #${feature.id}`} />
             <div className="mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-24">
                 <h2 className="text-2xl font-extrabold tracking-tight text-gray-900 lg:text-4xl mb-4 lg:mb-8">
